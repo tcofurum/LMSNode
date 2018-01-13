@@ -1,0 +1,19 @@
+{
+  "name": "lmsnode",
+  "version": "1.0.0",
+  "description": "Library Management System",
+  "main": "hello.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coderPro40/LMSNode.git"
+  },
+  "author": "ThankGod Ofurum",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coderPro40/LMSNode/issues"
+  },
+  "homepage": "https://github.com/coderPro40/LMSNode#readme"
+}
