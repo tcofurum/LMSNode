@@ -1,11 +1,16 @@
 const express = require('express');
-const authorController = require("../controllers/author/authorController");
+const authorController = require("../main/service/author-service");
 
 const router = express.Router();
 
 router
-    .get('/readAllAuthors', authorController.readAllAuthors)
-    .get('/readAuthorsByName/:searchString', authorController.readAuthorsByName)
-    .post('/saveAuthors', authorController.saveAuthors)
+    .get('/readAuthor', authorController.readAllAuthors)
+    .get('/readAuthorj/:authorName', authorController.readAuthorsByName)
+    .get('/readAuthorPage/:pageNo', authorController.readAuthorsLimitSearch)
+    .get('/readAuthorCount', authorController.getAuthorsCount)
+    .get('/readAuthorByPK/:pk', authorController.readAuthorByPK)        
+    .post('/saveAuthor', authorController.addAuthorWithID)
+    .post('/editAuthor', authorController.updateAuthor)
+    .get('/deleteAuthor/:pk', authorController.deleteAuthor)        
 
 module.exports = router;
