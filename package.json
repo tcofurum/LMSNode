@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/coderPro40/LMSNode#readme",
   "dependencies": {
-    "async": "^2.6.0",
+    "async": "^3.2.2",
     "circular-json": "^0.5.1",
     "express": "^4.16.2",
     "express-myconnection": "^1.0.4",
